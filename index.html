@@ -24,28 +24,60 @@
                         <input type="date" class="date-field" name="date" required>
                     </div>
                     <div class="duty-hierarchy-container">
-                        <div class="duty-hierarchy">Urgensi</div>
+                        <div class="duty-hierarchy">Prioritas</div>
                         <select class="duty-hierarchy-field">
-                            <option value="0">Pilih urgensi</option>
+                            <option value="0">Prioritas tugas</option>
                             <option value="1">Low</option>
                             <option value="2">Medium</option>
                             <option value="3">High</option>
                           </select>
                     </div>
                 </div>
-                <input type="submit" class="submit">
+                <button type="button" class="submit">Tambah</button>
 
-                <div class="task-list">
-                    <ul class="list">
-                        <li class="checked">
-                            <p>nama tugas</p>
-                            <p>tanggal</p>
-                            <p>urgensi</p>
-                        </li>
-                        <li>task 2</li>
-                        <li>taks 3 </li>
-                    </ul>
+                <div class="cross"></div>
+
+                <p class="todo-undone">Tugas yang harus diselesaikan</p>
+                <div class="list-field">
+                    <div class="table-header">
+                        <div class="list-todo">Tugas</div>
+                        <div class="date-todo">Tanggal</div>
+                        <div class="priority-todo">Prioritas</div>
+                        <div class="search-todo">cari</div>
+                    </div>
+                    <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div>
+                    <div class="task-list">
+                        <ul class="list">
+                            <li class="checked">
+                                <input type="checkbox" class="checkbox">gi
+                                <p class="list-todo-value">nama tugas</p>
+                                <p class="date-todo-value">tanggal</p>
+                                <p class="search-todo-value">urgensi</p>
+                                <img class="delete-task-button" src="./asset/icons8-delete.svg">
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
+
+                <button type="button" class="submit done-button">Selesai</button>
+
+                <p>Tugas yang telah diselesaikan</p>
+                <div class="list-field">
+                    <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div>
+                    <div class="task-list">
+                        <ul class="list">
+                            <li class="checked">
+                                <p>nama tugas</p>
+                                <p>tanggal</p>
+                                <p>urgensi</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button type="button" class="submit delete-button">Hapus</button>
+
             </div>
         </section>
     </main>
