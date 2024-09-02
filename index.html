@@ -8,9 +8,49 @@
 </head>
 <body class="body">
     <header class="header">
-        <h1>TO DO LIST</h1>
+        <h1 >TO DO LIST</h1>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+        <section class="section">
+            <div class="app-container">
+                <h2>Masukkan tugas anda di bawah ini</h2>
+                <div class="task-field-container">
+                    <label class="task-todo" for="task-field">Tugas :</label>
+                    <textarea class="task-field" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
+                </div>
+                <div class="devider">
+                    <div class="date-field-container">
+                        <label for="date" class="date-todo">Masukkan Tanggal</label>
+                        <input type="date" class="date-field" name="date" required>
+                    </div>
+                    <div class="duty-hierarchy-container">
+                        <div class="duty-hierarchy">Urgensi</div>
+                        <select class="duty-hierarchy-field">
+                            <option value="0">Pilih urgensi</option>
+                            <option value="1">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="3">High</option>
+                          </select>
+                    </div>
+                </div>
+                <input type="submit" class="submit">
+
+                <div class="task-list">
+                    <ul class="list">
+                        <li class="checked">
+                            <p>nama tugas</p>
+                            <p>tanggal</p>
+                            <p>urgensi</p>
+                        </li>
+                        <li>task 2</li>
+                        <li>taks 3 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">2024</p>
+    </footer>
 </body>
 </html>

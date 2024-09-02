@@ -1,5 +1,5 @@
 * {
-    border: 1px red solid
+    border: 0px red solid
 }
 
 .body {
@@ -9,10 +9,150 @@
 }
 
 .header {
-    height: 100px;
+    display: flex;
+    height: 170px;
+    background-color: #639B76;
+    color: whitesmoke;
+    flex-direction: row;
+    justify-content: center;
 }
+
+h1 {
+ height: fit-content;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 600px;
+}
+
+.section {
+    background-color: #E0E1DD;
+    position: absolute;
+    top: -70px;
+    min-width:  500px;
+    height: 500px;
+    border-radius: 18px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-field-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.task-todo {
+    margin-bottom: 5px;
+}
+
+.task-field {
+    padding: 8px;
+    height: 72px;
+}
+.task-field::placeholder {
+    height: 100%;
+    padding:;
+    color: #AB927D;
+    text-align: ;
+}
+
+.devider {
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.date-field-container{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    flex-basis: 100%;
+}
+
+.date-todo{
+    margin-bottom: 5px;
+}
+
+.date-field {
+    height: 24px;
+}
+
+.duty-hierarchy-container{
+    flex-basis: 100%;
+}
+
+.duty-hierarchy {
+    margin-bottom: 5px;
+}
+
+.duty-hierarchy-field {
+    width: 100%;
+    height: 24px;
+}
+
+.submit {
+    margin-top: 20px;
+    width: 200px;
+    height: 24px;
+    color: white;
+    background-color: #AB927D;
+    border-radius: 10px;
+}
+
+.task-list {
+    /* border: solid; */
+    display: flex;
+    justify-content: left;
+    width: 90%;
+}
+
+ul {
+    margin-left: 20px;
+    padding: 0px;
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url('./asset/unchecked.svg');
+    left: -30px;
+}
+
 
 .footer {
     height: 50px;
-    background-color: olive;
+    background-color: #395756;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
