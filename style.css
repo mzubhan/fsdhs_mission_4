@@ -1,5 +1,5 @@
 * {
-    border: 0px red solid
+    border: 1px red solid;
 }
 
 .body {
@@ -34,6 +34,16 @@ h1 {
     width:  600px;
     border-radius: 18px;
 
+}
+
+.profile {
+    display: flex;
+
+    width: 90%;
+}
+
+.profile :nth-child(1) {
+    flex-basis: 50%;
 }
 
 .app-container {
@@ -213,6 +223,7 @@ ul li {
 }
 
 .checked {
+    display: flex;
     align-items: center;
     margin-left: 15px;
 }
@@ -242,6 +253,29 @@ ul li {
 
 .checked :nth-child(5) {
     flex-basis: 5%;
+}
+
+.done-task {
+    display: flex;
+    gap: 10px;
+}
+
+.done-task :nth-child(1) {
+    flex-basis: 40%;
+}
+
+.done-task-add {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.done-task-add :nth-child(1) {
+    flex-basis: 40%;
+}
+
+.done-task p {
+    font-weight: bold;
 }
 
 .done-button {

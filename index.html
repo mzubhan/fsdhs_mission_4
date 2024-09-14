@@ -14,6 +14,10 @@
         <section class="section">
             <div class="app-container">
                 <h2>Masukkan tugas anda di bawah ini</h2>
+                <div class="profile">
+                    <p>Nama: </p>
+                    <p>Jabatan: </p>
+                </div>
                 <div class="task-field-container">
                     <label class="task-todo" for="task-field">Tugas :</label>
                     <textarea class="task-field" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
@@ -70,18 +74,35 @@
 
                 <button type="button" class="submit done-button">Selesai</button>
 
-                <p>Tugas yang telah diselesaikan</p>
+                <p>Daftar tugas yang telah diselesaikan</p>
                 <div class="list-field">
-                    <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div>
-                    <div class="task-list">
+                    <!-- <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div> -->
+
                         <ul class="list">
-                            <li class="checked">
+                            <li class="done-task">
                                 <p>nama tugas</p>
                                 <p>tanggal</p>
                                 <p>urgensi</p>
                             </li>
                         </ul>
-                    </div>
+
+                    <ul class="list">
+                        <li class="done-task-add">
+                            <p class="done-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
+                            <p class="done-date">10/10/2023</p>
+                            <p class="done-p">Mahal!</p>
+                        </li>
+                    </ul>
+
+                    <ul class="list">
+                        <li class="done-task-add">
+                            <p class="done-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
+                            <p class="done-date">10/10/2023</p>
+                            <p class="done-p">Mahal!</p>
+                        </li>
+                    </ul>
+                    
+
                 </div>
 
                 <button type="button" class="submit delete-button">Hapus</button>
