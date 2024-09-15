@@ -20,7 +20,7 @@
                 </div>
                 <div class="task-field-container">
                     <label class="task-todo" for="task-field">Tugas :</label>
-                    <textarea class="task-field" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
+                    <textarea class="task-field" id="task-todo" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
                 </div>
                 <div class="devider">
                     <div class="date-field-container">
@@ -37,7 +37,7 @@
                           </select>
                     </div>
                 </div>
-                <button type="button" class="submit">Tambah</button>
+                <button type="button" class="submit" onclick="addTask()">Tambah</button>
 
                 <div class="cross"></div>
 
@@ -52,18 +52,9 @@
                     <!-- <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div> -->
                     <div class="task-list">
                         <ul class="list">
-                            <li class="checked">
+                            <li class="task-added">
                                 <input type="checkbox" class="checkbox">
-                                <p class="list-todo-value"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
-                                <p class="date-todo-value">10/10/2023</p>
-                                <p class="search-todo-value">Mahal!</p>
-                                <img class="delete-task-button" src="./asset/icons8-delete.svg">
-                            </li>
-                        </ul>
-                        <ul class="list">
-                            <li class="checked">
-                                <input type="checkbox" class="checkbox">
-                                <p class="list-todo-value"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
+                                <p class="list-todo-value"></p>
                                 <p class="date-todo-value">10/10/2023</p>
                                 <p class="search-todo-value">Mahal!</p>
                                 <img class="delete-task-button" src="./asset/icons8-delete.svg">
@@ -113,5 +104,7 @@
     <footer class="footer">
         <p class="footer-text">2024</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
