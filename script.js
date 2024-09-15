@@ -1,4 +1,5 @@
 const inputText = document.getElementById("task-todo");
+const inputDate = document.getElementById("date-field")
 const listContainer = document.getElementById("list-added");
 
 function addTask() {
@@ -18,12 +19,12 @@ function addTask() {
       // Create the list-todo-value paragraph
       const todoValue = document.createElement('p');
       todoValue.classList.add('list-todo-value');
-      todoValue.textContent = 'Your task here';  // Change as needed
+      todoValue.textContent = inputText.value;  // Change as needed
 
       // Create the date-todo-value paragraph
       const dateValue = document.createElement('p');
       dateValue.classList.add('date-todo-value');
-      dateValue.textContent = '10/10/2023';  // Change as needed
+      dateValue.textContent = inputDate.value ;  // Change as needed
 
       // Create the search-todo-value paragraph
       const searchValue = document.createElement('p');
@@ -44,6 +45,6 @@ function addTask() {
       li.appendChild(deleteButton);
 
       // Append the li to the ul (todo-list)
-      document.getElementById('todo-list').appendChild(li);
+      document.getElementById('list-added').appendChild(li);
   }
 }

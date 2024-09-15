@@ -1,5 +1,5 @@
 * {
-    border: 1px red solid;
+    border: 0px red solid;
 }
 
 .body {
@@ -233,6 +233,10 @@ ul li :nth-child(4) {
     flex-basis: 20%;
 }
 
+.list-added {
+    margin-bottom: 10px;
+}
+
 .checked {
     display: flex;
     align-items: center;
@@ -240,14 +244,14 @@ ul li :nth-child(4) {
 }
 
 .task-added {
-    position: relative;;
+    position: relative;
 }
 
 .checkbox {
     content: '';
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     background-image: url('./asset/unchecked.svg');
     left: -19px;
     cursor: pointer;
