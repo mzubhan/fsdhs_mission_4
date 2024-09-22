@@ -140,6 +140,31 @@ h1 {
     align-items: center;
 }
 
+.list-field-done {
+    position: relative;
+    width: 90%;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-field-done ul {
+
+    margin-bottom: 10px;
+}
+
+.list-field-done-title {
+    margin-top: 10px;
+}
+
+.list-field-done-wrapper {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
 .task-list {
     /* border: solid; */
     display: flex;
@@ -234,7 +259,7 @@ ul li :nth-child(4) {
 }
 
 .list-added {
-    margin-bottom: 10px;
+
 }
 
 .checked {
@@ -245,6 +270,7 @@ ul li :nth-child(4) {
 
 .task-added {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .checkbox {
