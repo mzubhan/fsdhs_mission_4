@@ -17,6 +17,10 @@
     justify-content: center;
 }
 
+.delete-task-button {
+    cursor: pointer;
+}
+
 h1 {
  height: fit-content;
 }
@@ -158,6 +162,7 @@ h1 {
 
 .list-field-done-title {
     margin-top: 10px;
+    width: 95%;
 }
 
 .list-field-done-wrapper {
@@ -202,6 +207,10 @@ p {
 .list-todo {
     flex-basis: 45%;
     font-weight: bold;
+}
+
+.list-todo-value {
+    margin-left: 10px;
 }
 
 .date-todo {
@@ -313,6 +322,7 @@ ul li :nth-child(4) {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .done-task-add :nth-child(1) {
@@ -320,7 +330,7 @@ ul li :nth-child(4) {
 }
 
 .done-task p {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .done-button {
@@ -342,4 +352,8 @@ ul li :nth-child(4) {
 .footer-text {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.done-task-title p {
+    font-weight: bold;
 }

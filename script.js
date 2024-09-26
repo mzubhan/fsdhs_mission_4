@@ -1,5 +1,5 @@
-const inputText = document.getElementById("task-todo");
-const inputDate = document.getElementById("date-field");
+const inputText = document.getElementById("task-field");
+const inputDate = document.getElementById("date");
 const inputPriority = document.getElementById("priority");
 const listContainer = document.getElementById("list-added");
 const listContainerDone = document.getElementById("list-field-done-wrapper")
@@ -50,9 +50,56 @@ function submit() {
   }
 }
 
+document.addEventListener('click', function(event) {
+
+    if (event.target.classList.contains('delete-task-button')) {
+        const parentLi = event.target.closest('li'); 
+        if (parentLi) {
+            parentLi.remove();
+        }
+    }
+});
+
+document.getElementById('done-button').addEventListener('click', function () {
+
+    const tasks = document.querySelectorAll('#list-added .task-added');
+
+    tasks.forEach(task => {
+        const checkbox = task.querySelector('.checkbox');
+
+        if (checkbox && checkbox.checked) {
+
+            const taskClone = task.cloneNode(true); 
+
+            const input = taskClone.querySelector('input[type="checkbox"]');
+            const img = taskClone.querySelector('img.delete-task-button');
+            if (input) input.remove();  
+            if (img) img.remove();     
+
+            const todoText = taskClone.querySelector('.list-todo-value');
+            const dateText = taskClone.querySelector('.date-todo-value');
+            const priorityText = taskClone.querySelector('.search-todo-value');
+            
+            if (todoText) todoText.classList.replace('list-todo-value', 'done-t');
+            if (dateText) dateText.classList.replace('date-todo-value', 'done-date');
+            if (priorityText) priorityText.classList.replace('search-todo-value', 'done-p');
+
+            taskClone.classList.replace('task-added', 'done-task-add');
+
+            document.getElementById('done-task-listed').appendChild(taskClone);
+
+            task.remove();
+        }
+    });
+});
+
+document.getElementById('deleteButton').addEventListener('click', function () {
+    document.getElementById('list-field-done-wrapper').innerHTML = '';
+});
+
 // FUNGSI HAPUS SEMUA TUGAS
 deleteTaskButton.addEventListener('click', () => {
-    // Remove all ul elements inside the wrapper
+
     const lists = listContainerDone.querySelectorAll('ul.list');
     lists.forEach(list => list.remove());
 });

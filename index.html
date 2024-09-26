@@ -20,12 +20,12 @@
                 </div>
                 <div class="task-field-container">
                     <label class="task-todo" for="task-field">Tugas :</label>
-                    <textarea class="task-field" id="task-todo" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
+                    <textarea class="task-field" id="task-field" name="task-todo" type="text" placeholder="Masukkan tugas di sini"></textarea>
                 </div>
                 <div class="devider">
                     <div class="date-field-container">
                         <label for="date" class="date-todo">Masukkan Tanggal</label>
-                        <input type="date" class="date-field" id="date-field" name="date" required>
+                        <input type="date" class="date-field" id="date" name="date" required>
                     </div>
                     <div class="duty-hierarchy-container">
                         <div class="duty-hierarchy">Prioritas tugas</div>
@@ -48,50 +48,43 @@
                         <div class="date-todo">Tanggal</div>
                         <div class="priority-todo">Prioritas</div>
                         <img class="search-task-button" src="./asset/search.png">
-                    </div>
+                    </div>    
                     <!-- <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div> -->
                     <div class="task-list">
                         <ul class="list-added" id="list-added">
                             <li class="task-added">
-                                <input type="checkbox" class="checkbox">
-                                <p class="list-todo-value"></p>
+                                <!-- <input type="checkbox" class="checkbox">
+                                <p class="list-todo-value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus elig</p>
                                 <p class="date-todo-value">10/10/2023</p>
                                 <p class="search-todo-value">Mahal!</p>
-                                <img class="delete-task-button" src="./asset/icons8-delete.svg">
+                                <img class="delete-task-button" src="./asset/icons8-delete.svg"> -->
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <button type="button" class="submit done-button">Selesai</button>
-
+                <button type="button" class="submit done-button" id="done-button">Selesai</button>
                 <p>Daftar tugas yang telah diselesaikan</p>
                 <div class="list-field-done">
                     <!-- <div class="list-availability">Tidak ada tugas yang harus dikerjakan</div> -->
-                    <ul class="list list-field-done-title">
-                        <li class="done-task">
-                            <p>nama tugas</p>
-                            <p>tanggal</p>
-                            <p>urgensi</p>
+                    <ul class="list  list-field-done-title">
+                        <li class="done-task done-task-title">
+                            <p>Nama Tugas</p>
+                            <p>Tanggal</p>
+                            <p>Prioritas</p>
                         </li>
                     </ul>
 
                     <div class="list-field-done-wrapper" id="list-field-done-wrapper">
-                    <ul class="list">
-                        <li class="done-task-add">
+                    <ul class="list" id="done-task-listed">
+                        <!-- <li class="done-task-add">
                             <p class="done-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
                             <p class="done-date">10/10/2023</p>
                             <p class="done-p">Mahal!</p>
-                        </li>
+                        </li> -->
                     </ul>
 
-                    <ul class="list">
-                        <li class="done-task-add">
-                            <p class="done-t"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dicta natus eligendi cupiditate repellendus tempore odit, quas magnam, obcaecati aut, fugit nihil culpa excepturi dolor ut! Blanditiis saepe libero cum!</p>
-                            <p class="done-date">10/10/2023</p>
-                            <p class="done-p">Mahal!</p>
-                        </li>
-                    </ul>
+
                 </div>
             </div>
 
